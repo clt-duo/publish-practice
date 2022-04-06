@@ -170,8 +170,9 @@
                       required
                     >
                       <option value="" disabled selected hidden>Year</option>
-                      <option value="2">One to Multi</option>
-                      <option value="3">Multi to Multi</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
                     </select>
                     <select
                       style="flex: 1"
@@ -180,12 +181,142 @@
                       required
                     >
                       <option value="" disabled selected hidden>Month</option>
-                      <option value="2">One to Multi</option>
-                      <option value="3">Multi to Multi</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
                     </select>
                   </span>
                 </div>
                 <span class="divider"></span>
+                <div id="period" class="conditionContainer">
+                  <span
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                  >
+                    <span class="conditionName">Type</span>
+                    <span class="radioContainer">
+                      <label class="radioButton">
+                        Calendar
+                        <input
+                          style="margin: 0px"
+                          type="radio"
+                          id="departure"
+                          name="type_type"
+                          value="calendar"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radioButton">
+                        List
+                        <input
+                          style="margin: 0px"
+                          type="radio"
+                          id="arrival"
+                          name="type_type"
+                          value="list"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                    </span>
+                  </span>
+                </div>
+                <div id="period" class="conditionContainer">
+                  <span
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                  >
+                    <span class="conditionName">Service</span>
+                    <span class="radioContainer">
+                      <label class="radioButton">
+                        Calendar
+                        <input
+                          style="margin: 0px"
+                          type="radio"
+                          id="departure"
+                          name="service_type"
+                          value="calendar"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radioButton">
+                        Bulk
+                        <input
+                          style="margin: 0px"
+                          type="radio"
+                          id="arrival"
+                          name="service_type"
+                          value="list"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                    </span>
+                  </span>
+                </div>
+                <div id="period" class="conditionContainer">
+                  <span
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                  >
+                    <span class="conditionName">Priority</span>
+                  </span>
+                  <span
+                    style="
+                      display: flex;
+                      flex: 1 1 auto;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      gap: 10px;
+                    "
+                  >
+                    <select
+                      style="flex: 1"
+                      name="type"
+                      id="scheduleTypeSelect"
+                      required
+                    >
+                      <option value="1">All</option>
+                      <option value="2">Time</option>
+                      <option value="3">Days</option>
+                    </select>
+                    <div class="conditionInputDiv">
+                      <input
+                        style="width: 30px"
+                        id="priority"
+                        type="text"
+                        maxlength="4"
+                      />
+                      <span id="priorityEndUnit"> T/Times<br />(Days) </span>
+                    </div>
+                  </span>
+                </div>
+                <div class="dotDivider"></div>
+                <div id="searchButtonContainer">
+                  <button id="searchButton" type="submit">Search</button>
+                  <button id="refreshButton" type="reset">
+                    <img src="assets/refresh.svg" alt="refresh" />
+                  </button>
+                </div>
               </div>
             </div>
             <div id="searchResultContainer">result</div>

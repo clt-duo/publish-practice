@@ -131,7 +131,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  background-color: yellowgreen;
 }
 
 .container #searchBoxContainer {
@@ -160,7 +159,7 @@ body {
   flex: 0 0 auto;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 9px;
+  margin-top: 8px;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -202,11 +201,14 @@ body {
 }
 
 #searchBox .conditionName {
+  flex: 0 0 auto;
   font-family: "poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
+  margin-right: 9px;
   color: #111827;
+  min-width: 52px;
 }
 
 #searchBox .divider {
@@ -215,11 +217,19 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 14px;
   margin-left: 16px;
   margin-right: 16px;
   border: 1px solid #f0f4f8;
   box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#searchBox .dotDivider {
+  display: flex;
+  height: 0px;
+  margin-top: 15px;
+  border: 2px dashed #d2d8de;
   border-radius: 8px;
 }
 
@@ -247,13 +257,15 @@ body {
   border: none;
   outline: none;
   padding-left: 8px;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
 }
 
 #searchBox .radioContainer {
   display: flex;
   flex: 1 1 auto;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   gap: 13px;
 }
@@ -285,20 +297,17 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 16px;
-  width: 16px;
-  background-color: #eee;
+  height: 14px;
+  width: 14px;
+  border: #e5e7eb solid 1px;
+  background-color: #fff;
   border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.radioButton:hover input ~ .checkmark {
-  background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
 .radioButton input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: #6366f1;
+  border: #6366f1 solid 1px;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -315,12 +324,64 @@ body {
 
 /* Style the indicator (dot/circle) */
 .radioButton .checkmark:after {
-  top: 5px;
-  left: 5px;
+  top: 3px;
+  left: 3px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: white;
+  border: #6366f1 solid 1px;
+}
+
+#priorityEndUnit {
+  margin-left: 5px;
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9ca3af;
+}
+
+#searchButtonContainer {
+  padding: 16px;
+  gap: 8px;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#searchButton {
+  all: unset;
+  cursor: pointer;
+  flex: 1 1 auto;
+  max-height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #6366f1;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 0px;
+}
+
+#refreshButton {
+  all: unset;
+  cursor: pointer;
+  flex: 0 1 48px;
+  max-height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #e5e7eb;
+  border: none;
+  outline: none;
 }
 
 .container #searchResultContainer {
