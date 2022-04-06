@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>E-Service</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript">
+      console.log(21);
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sideNav">
+        <a class="menu" href="">
+          <img src="assets/menu_white_24dp.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="container">
+        <div id="titleBar">
+          <img style="margin-left: 28px" src="assets/logo.svg" alt="logo" />
+          <span id="menu">
+            <img src="assets/profile.svg" alt="profile" />
+            <img src="assets/sitemap.svg" alt="profile" />
+            <img src="assets/search.svg" alt="profile" />
+            <img src="assets/title_menu.svg" alt="profile" />
+          </span>
+        </div>
+        <div class="mainContainer">
+          <div id="pageTitle">
+            <span style="display: flex; flex-direction: row">
+              <p class="title">Schedule</p>
+              <img style="margin-left: 8px" src="assets/info.svg" alt="info" />
+            </span>
+            <p class="subTitle">
+              Please enter the data and select the appropriate from the auto
+              complete list and click "Search".
+            </p>
+          </div>
+          <div id="subTabContainer">
+            <div class="subTabSelected">Point to Point</div>
+            <div class="subTab">Vessel</div>
+            <div class="subTab">Port</div>
+            <div class="subTab">My Schedule</div>
+          </div>
+          <div id="searchContainer">
+            <div id="searchBoxContainer">
+              <div id="searchBox">
+                <div id="scheduleType" class="conditionContainer">
+                  <span class="conditionName">Schedule Type</span>
+                  <select name="type" id="scheduleTypeSelect" required>
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="1">One to One</option>
+                    <option value="2">One to Multi</option>
+                    <option value="3">Multi to Multi</option>
+                  </select>
+                </div>
+                <span class="divider"></span>
+                <div id="mySchedule" class="conditionContainer">
+                  <span class="conditionName">My Schedule</span>
+                  <select name="type" id="scheduleTypeSelect" required>
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="2">One to Multi</option>
+                    <option value="3">Multi to Multi</option>
+                  </select>
+                </div>
+                <div id="origin" class="conditionContainer">
+                  <span class="conditionName">Origin</span>
+                  <div class="conditionInputDiv">
+                    <img src="assets/input_search.svg" alt="search" />
+                    <input
+                      id="origin"
+                      type="text"
+                      placeholder="Place input a location..."
+                    />
+                  </div>
+                  <select name="type" id="scheduleTypeSelect" required>
+                    <option value="" disabled selected hidden>
+                      Terminal Select
+                    </option>
+                    <option value="2">One to Multi</option>
+                    <option value="3">Multi to Multi</option>
+                  </select>
+                </div>
+                <div id="destination" class="conditionContainer">
+                  <span
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                  >
+                    <span class="conditionName">Destination</span>
+                    <img src="assets/point_switch.svg" width="13" height="13" />
+                  </span>
+                  <div class="conditionInputDiv">
+                    <img src="assets/input_search.svg" />
+                    <input
+                      id="origin"
+                      type="text"
+                      placeholder="Place input a location..."
+                    />
+                  </div>
+                  <select name="type" id="scheduleTypeSelect" required>
+                    <option value="" disabled selected hidden>
+                      Terminal Select
+                    </option>
+                    <option value="2">One to Multi</option>
+                    <option value="3">Multi to Multi</option>
+                  </select>
+                </div>
+                <span class="divider"></span>
+                <div id="period" class="conditionContainer">
+                  <span
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                  >
+                    <span class="conditionName">Period</span>
+                    <span class="radioContainer">
+                      <span class="radioButton">
+                        <input
+                          style="margin: 0px"
+                          type="radio"
+                          id="departure"
+                          name="period_type"
+                          value="departure"
+                        />
+                        <label for="departure">Departure</label>
+                      </span>
+                      <span class="radioButton">
+                        <span class="checkmark"></span>
+                        <input
+                          style="margin: 0px"
+                          type="radio"
+                          id="arrival"
+                          name="period_type"
+                          value="arrival"
+                        />
+                        <label for="arrival">Arrival</label>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    style="
+                      display: flex;
+                      flex: 1 1 auto;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      gap: 10px;
+                    "
+                  >
+                    <select
+                      style="flex: 1"
+                      name="type"
+                      id="scheduleTypeSelect"
+                      required
+                    >
+                      <option value="" disabled selected hidden>Year</option>
+                      <option value="2">One to Multi</option>
+                      <option value="3">Multi to Multi</option>
+                    </select>
+                    <select
+                      style="flex: 1"
+                      name="type"
+                      id="scheduleTypeSelect"
+                      required
+                    >
+                      <option value="" disabled selected hidden>Month</option>
+                      <option value="2">One to Multi</option>
+                      <option value="3">Multi to Multi</option>
+                    </select>
+                  </span>
+                </div>
+                <span class="divider"></span>
+              </div>
+            </div>
+            <div id="searchResultContainer">result</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
