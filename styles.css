@@ -451,3 +451,14 @@ body {
   color: #6366f1;
   border-radius: 8px;
 }
+
+#searchResultList {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  background-color: #27537e;
+}
