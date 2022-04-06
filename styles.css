@@ -387,7 +387,67 @@ body {
 .container #searchResultContainer {
   display: flex;
   flex: 1 1 auto;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: darkkhaki;
+}
+
+#searchResultFunctions {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  background-color: tomato;
+}
+
+#resultInfo {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background-color: #f0f4f8;
+}
+
+#resultInfo .city {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1%;
+}
+
+#resultInfo .country {
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1%;
+}
+
+#resultInfo .resultCount {
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1%;
+}
+
+#resultFunctions button {
+  all: unset;
+  cursor: pointer;
+  flex: 0 0 auto;
+  background-color: #eef2ff;
+  border: 1px solid #a5b4fc;
+  padding: 12px;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0px;
+  color: #6366f1;
+  border-radius: 8px;
 }
