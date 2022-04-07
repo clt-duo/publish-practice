@@ -114,6 +114,7 @@ body {
   line-height: 21px;
   color: #9ca3af;
   margin-bottom: 6px;
+  cursor: pointer;
 }
 
 .container #subTabContainer .subTabSelected {
@@ -123,6 +124,7 @@ body {
   line-height: 21px;
   color: #4f46e5;
   border-bottom: solid 2px #4f46e5;
+  cursor: pointer;
 }
 
 .container #searchContainer {

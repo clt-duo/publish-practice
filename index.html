@@ -47,10 +47,69 @@
             </p>
           </div>
           <div id="subTabContainer">
-            <div class="subTabSelected">Point to Point</div>
-            <div class="subTab">Vessel</div>
-            <div class="subTab">Port</div>
-            <div class="subTab">My Schedule</div>
+            <div
+              class="subTab"
+              onclick="{
+                if (this.classList.contains('subTab')) {
+                  for(var tab of $('#subTabContainer').children()){
+                    $(tab).removeClass('subTabSelected');
+                    $(tab).addClass('subTab');
+                  }
+                  $(this).addClass('subTabSelected');
+                  $(this).removeClass('subTab');
+                } 
+              }"
+            >
+              Point to Point
+            </div>
+            <div
+              class="subTab"
+              onclick="{
+                if (this.classList.contains('subTab')) {
+                  for(var tab of $('#subTabContainer').children()){
+                    $(tab).removeClass('subTabSelected');
+                    $(tab).addClass('subTab');
+                  }
+                  $(this).addClass('subTabSelected');
+                  $(this).removeClass('subTab');
+
+                } 
+              }"
+            >
+              Vessel
+            </div>
+            <div
+              class="subTab"
+              onclick="{
+                if (this.classList.contains('subTab')) {
+                  for(var tab of $('#subTabContainer').children()){
+                    $(tab).removeClass('subTabSelected');
+                    $(tab).addClass('subTab');
+                  }
+                  $(this).addClass('subTabSelected');
+                  $(this).removeClass('subTab');
+
+                } 
+              }"
+            >
+              Port
+            </div>
+            <div
+              class="subTab"
+              onclick="{
+                if (this.classList.contains('subTab')) {
+                  for(var tab of $('#subTabContainer').children()){
+                    $(tab).removeClass('subTabSelected');
+                    $(tab).addClass('subTab');
+                  }
+                  $(this).addClass('subTabSelected');
+                  $(this).removeClass('subTab');
+
+                } 
+              }"
+            >
+              My Schedule
+            </div>
           </div>
           <div id="searchContainer">
             <div id="searchBoxContainer">
