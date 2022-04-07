@@ -269,7 +269,11 @@
                     </span>
                   </span>
                 </div>
-                <div id="period" class="conditionContainer">
+                <div
+                  id="period"
+                  class="conditionContainer"
+                  style="margin-bottom: 15px"
+                >
                   <span
                     style="
                       display: flex;
@@ -394,7 +398,7 @@
                   </div>
                   <div class="closingInfo">
                     <div class="closingInfoHeader">
-                      <img src="assets/info.svg" alt="info" />
+                      <img src="assets/clock.svg" alt="clock" />
                       Closing Infomation
                     </div>
                     <div class="closingInfoData">
@@ -410,8 +414,241 @@
                       <span class="scheduleInfoData">24 Mar 2022 14:00</span>
                     </div>
                   </div>
-                  <div class="dotDivider"></div>
-                  <div class="rootDetail"></div>
+                  <div class="dotDivider" style="width: 100%"></div>
+                  <div class="routeDetailsContainer">
+                    <div class="routeDetailsHeader">
+                      <span>
+                        <img
+                          src="assets/select_arrow.svg"
+                          alt="arrow"
+                          style="margin-right: 10px"
+                        />
+                        Show route details
+                      </span>
+                      <button class="routeBooking">Booking</button>
+                    </div>
+                    <div class="routeDetailsBody">
+                      <div class="detailGridContainer">
+                        <div class="departurePoint">
+                          <span class="scheduleInfoAccent">Busan</span>
+                          <span class="scheduleInfoData"
+                            >Busan, BTP Sinseondae Terminal</span
+                          >
+                        </div>
+                        <div class="gridItem">
+                          <img src="assets/ship.svg" alt="ship" />
+                        </div>
+                        <div class="departureSchedule">
+                          <span style="display: flex; flex-direction: row">
+                            <span class="scheduleInfoData"
+                              >Departing on&nbsp;</span
+                            >
+                            <span class="scheduleInfoAccent"
+                              >Sawasdee Sunrise 2204S</span
+                            >
+                          </span>
+                          <span class="scheduleInfoData"
+                            >28 Mar 2022 06:00</span
+                          >
+                        </div>
+                        <div class="gridItem"></div>
+                        <div class="gridItem">
+                          <div
+                            style="
+                              position: relative;
+                              top: -12px;
+                              left: 6px;
+                              width: 0px;
+                              height: 100%;
+                              border: 1px dashed #d2d8de;
+                            "
+                          ></div>
+                        </div>
+                        <div class="gridItem">
+                          <div style="display: flex; flex: 0 0 auto">
+                            <div class="tableGridContainer">
+                              <div class="tableGridHeader">IMO Number</div>
+                              <div class="tableGridHeader">Flag</div>
+                              <div class="tableGridHeader">MRN</div>
+                              <div class="tableGridHeader">Call Sign</div>
+                              <div class="tableGridHeader">
+                                Frequency of Vessel Calling
+                              </div>
+                              <div class="tableGridItem">9886079</div>
+                              <div class="tableGridItem">MH</div>
+                              <div class="tableGridItem">22SNK1244E</div>
+                              <div class="tableGridItem">V7A2815</div>
+                              <div class="tableGridItem">N/A(Out), N/A(In)</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="arrivalPoint">
+                          <span class="scheduleInfoAccent">Laem Chabang</span>
+                          <span class="scheduleInfoData"
+                            >Laem Chabang International Terminal</span
+                          >
+                        </div>
+                        <div class="gridItem">
+                          <img src="assets/map_point.svg" alt="point" />
+                        </div>
+                        <div class="arrivalSchedule">
+                          <span class="scheduleInfoData">Arrival</span>
+                          <span class="scheduleInfoData">4 Apr 2022 13:30</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="searchResultItem">
+                  <div class="scheduleInfo">
+                    <div class="scheduleInfoItem">
+                      <span class="schedulePointHeader">
+                        <img src="assets/map_point.svg" alt="point" />
+                        Departure
+                      </span>
+                      <span style="margin-left: 22px; margin-top: 8px">
+                        <span class="scheduleInfoAccent">
+                          BPT Sinseondoae Terminal
+                        </span>
+                        <span class="scheduleInfoData"> 25 Mar 2022 </span>
+                      </span>
+                    </div>
+                    <div class="scheduleInfoItem" style="align-items: center">
+                      <span
+                        style="display: flex; align-items: center; gap: 13px"
+                      >
+                        <img src="assets/three_dot.svg" alt="dot" />
+                        <img src="assets/ship.svg" alt="ship" />
+                        <img src="assets/three_dot.svg" alt="dot" />
+                      </span>
+                      <span style="margin-top: 8px">
+                        <span class="scheduleInfoAccent">
+                          Sawasdee thailand 2204S
+                        </span>
+                        <span
+                          class="scheduleInfoData"
+                          style="display: flex; justify-content: center"
+                        >
+                          KST1 / Transit Time:
+                          <span class="scheduleInfoAccent">&nbsp;7 Days</span>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="scheduleInfoItem">
+                      <span class="schedulePointHeader">
+                        <img src="assets/map_point.svg" alt="point" />
+                        Arrival
+                      </span>
+                      <span style="margin-left: 22px; margin-top: 8px">
+                        <span class="scheduleInfoAccent">
+                          Laem Chabang International Terminal
+                        </span>
+                        <span class="scheduleInfoData"> 1 Apr 2022 </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="closingInfo">
+                    <div class="closingInfoHeader">
+                      <img src="assets/clock.svg" alt="clock" />
+                      Closing Infomation
+                    </div>
+                    <div class="closingInfoData">
+                      <span class="scheduleInfoAccent">Documentation</span>
+                      <span class="scheduleInfoData">23 Mar 2022 12:00</span>
+                    </div>
+                    <div class="closingInfoData">
+                      <span class="scheduleInfoAccent">EDI</span>
+                      <span class="scheduleInfoData">23 Mar 2022 17:00</span>
+                    </div>
+                    <div class="closingInfoData">
+                      <span class="scheduleInfoAccent">Cargo</span>
+                      <span class="scheduleInfoData">24 Mar 2022 14:00</span>
+                    </div>
+                  </div>
+                  <div class="dotDivider" style="width: 100%"></div>
+                  <div class="routeDetailsContainer">
+                    <div class="routeDetailsHeader">
+                      <span>
+                        <img
+                          src="assets/select_arrow.svg"
+                          alt="arrow"
+                          style="margin-right: 10px"
+                        />
+                        Show route details
+                      </span>
+                      <button class="routeBooking">Booking</button>
+                    </div>
+                    <div class="routeDetailsBody">
+                      <div class="detailGridContainer">
+                        <div class="departurePoint">
+                          <span class="scheduleInfoAccent">Busan</span>
+                          <span class="scheduleInfoData"
+                            >Busan, BTP Sinseondae Terminal</span
+                          >
+                        </div>
+                        <div class="gridItem">
+                          <img src="assets/ship.svg" alt="ship" />
+                        </div>
+                        <div class="departureSchedule">
+                          <span style="display: flex; flex-direction: row">
+                            <span class="scheduleInfoData"
+                              >Departing on&nbsp;</span
+                            >
+                            <span class="scheduleInfoAccent"
+                              >Sawasdee Sunrise 2204S</span
+                            >
+                          </span>
+                          <span class="scheduleInfoData"
+                            >28 Mar 2022 06:00</span
+                          >
+                        </div>
+                        <div class="gridItem"></div>
+                        <div class="gridItem">
+                          <div
+                            style="
+                              position: relative;
+                              top: -12px;
+                              left: 6px;
+                              width: 0px;
+                              height: 100%;
+                              border: 1px dashed #d2d8de;
+                            "
+                          ></div>
+                        </div>
+                        <div class="gridItem">
+                          <div style="display: flex; flex: 0 0 auto">
+                            <div class="tableGridContainer">
+                              <div class="tableGridHeader">IMO Number</div>
+                              <div class="tableGridHeader">Flag</div>
+                              <div class="tableGridHeader">MRN</div>
+                              <div class="tableGridHeader">Call Sign</div>
+                              <div class="tableGridHeader">
+                                Frequency of Vessel Calling
+                              </div>
+                              <div class="tableGridItem">9886079</div>
+                              <div class="tableGridItem">MH</div>
+                              <div class="tableGridItem">22SNK1244E</div>
+                              <div class="tableGridItem">V7A2815</div>
+                              <div class="tableGridItem">N/A(Out), N/A(In)</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="arrivalPoint">
+                          <span class="scheduleInfoAccent">Laem Chabang</span>
+                          <span class="scheduleInfoData"
+                            >Laem Chabang International Terminal</span
+                          >
+                        </div>
+                        <div class="gridItem">
+                          <img src="assets/map_point.svg" alt="point" />
+                        </div>
+                        <div class="arrivalSchedule">
+                          <span class="scheduleInfoData">Arrival</span>
+                          <span class="scheduleInfoData">4 Apr 2022 13:30</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
